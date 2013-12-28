@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Digite seu nome"
+/>
+
+<EditText 
+    android:id="@+id/campoNome"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+/>
+
+<Button
+    android:id="@+id/botaoOk"
+    android:layout_width="102dp"
+    android:layout_height="wrap_content"
+    android:text=" OK " />
+
+<TextView 
+    android:id="@+id/campoResultado"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+ />
+    
+
+ </LinearLayout>

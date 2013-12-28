@@ -1,0 +1,40 @@
+package br.livro.android.cap3;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class Exemplo4 extends Activity {
+
+@Override
+public void onCreate(Bundle icicle) {
+	super.onCreate(icicle);
+	
+	//Abre a tela XML
+	setContentView(R.layout.layout_exemplo4_listener);
+	
+	// Busca o textView pelo Id
+	final EditText texNome = (EditText) findViewById(R.id.campoNome);
+	final TextView texResultado = (TextView) findViewById(R.id.campoResultado);
+	Button button = (Button) findViewById(R.id.BotaoOk);
+	
+	// Informa o listener...
+	button.setOnClickListener(new Button.OnClickListener() {
+		public void OnClick(View v) {
+			String nome = texNome.getText().toString();
+			
+			// Atualiza o texto
+			texResultado.setText(" Obrigado" + nome);
+		}	
+
+		
+		});
+
+	
+	}
+	
+	
+}
